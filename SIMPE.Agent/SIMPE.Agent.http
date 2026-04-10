@@ -1,0 +1,6 @@
+@SIMPE.Agent_HostAddress = http://localhost:5073
+
+GET {{SIMPE.Agent_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

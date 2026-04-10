@@ -1,0 +1,260 @@
+:root {
+    --bg-color: #000000;
+    --text-color: #e6edf3;
+    --accent: #3fb950;
+    --accent-glow: rgba(63, 185, 80, 0.4);
+    --card-bg: rgba(22, 27, 34, 0.6);
+    --border: rgba(48, 54, 61, 0.8);
+    --font: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.background-effects {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.glow-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.1; /* Reduced to keep the background truly black */
+    animation: float 20s infinite ease-in-out alternate;
+}
+
+#orb1 {
+    top: -10%;
+    left: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, #58a6ff 0%, transparent 70%);
+}
+
+#orb2 {
+    bottom: -20%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, #bc8cff 0%, transparent 70%);
+}
+
+@keyframes float {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(100px, 50px); }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.dashboard-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+    animation: fadeInDown 1s ease-out;
+}
+
+.dashboard-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.highlight {
+    color: #9333ea; /* Solid Premium Purple */
+}
+
+.status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    background: var(--card-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    box-shadow: 0 0 10px var(--accent-glow);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 var(--accent-glow); }
+    70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(63, 185, 80, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(63, 185, 80, 0); }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.dashboard-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    animation: fadeInDown 1.2s ease-out;
+}
+
+.nav-item {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    color: var(--text-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.nav-item:hover {
+    border-color: rgba(147, 51, 234, 0.5);
+    background: rgba(147, 51, 234, 0.05);
+    transform: translateY(-2px);
+}
+
+.nav-item.active {
+    background: rgba(147, 51, 234, 0.15);
+    border-color: #9333ea;
+    color: #c084fc;
+    box-shadow: 0 0 15px rgba(147, 51, 234, 0.3);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card.glass {
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+/* Add stagger delay for cards using JS but default here */
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
+.card:nth-child(7) { animation-delay: 0.7s; }
+.card:nth-child(8) { animation-delay: 0.8s; }
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-color: rgba(88, 166, 255, 0.5);
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(88,166,255,0.2) 0%, rgba(188,140,255,0.2) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(88, 166, 255, 0.3);
+}
+
+.icon-svg {
+    width: 24px;
+    height: 24px;
+    stroke: #58a6ff;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 0.9rem;
+    color: #8b949e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.2rem;
+}
+
+.card-value {
+    font-size: 1.25rem;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+.loading {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.2rem;
+    color: #8b949e;
+}
+
+@media (max-width: 768px) {
+    .dashboard-nav {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+    }
+    .nav-item {
+        flex: 1 1 calc(50% - 1rem);
+    }
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
