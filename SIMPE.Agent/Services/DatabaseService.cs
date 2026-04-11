@@ -24,11 +24,6 @@ namespace SIMPE.Agent.Services
 
         private void InitializeDatabase(string dbPath)
         {
-            // Si la base no existe, la lógica debería estar en init_db.py, 
-            // pero nos aseguramos que existe. En este entorno asumiremos 
-            // que schema.sql fue ejecutado o lo ejecutamos en BackgroundService.
-            // SQLite by default will create the file if it doesn't exist,
-            // but for tables we might need to read schema.sql later or rely on init_db.py
             if (!File.Exists(dbPath))
             {
                 Console.WriteLine($"[DB] Asegúrate de haber ejecutado init_db.py. No se encontró {dbPath}");
