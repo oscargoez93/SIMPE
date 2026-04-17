@@ -1,0 +1,64 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/SIMPE.Dashboard/css/style.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\style.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-E7LXRk7Y\u002B7Z4g9txhLEYXqDrCYKCIjZ7Ct2lz/YV/2g="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6160"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022E7LXRk7Y\u002B7Z4g9txhLEYXqDrCYKCIjZ7Ct2lz/YV/2g=\u0022"},{"Name":"Last-Modified","Value":"Fri, 17 Apr 2026 20:03:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SIMPE.Dashboard/css/style.ralpmh46v3.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\style.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ralpmh46v3"},{"Name":"integrity","Value":"sha256-E7LXRk7Y\u002B7Z4g9txhLEYXqDrCYKCIjZ7Ct2lz/YV/2g="},{"Name":"label","Value":"_content/SIMPE.Dashboard/css/style.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6160"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022E7LXRk7Y\u002B7Z4g9txhLEYXqDrCYKCIjZ7Ct2lz/YV/2g=\u0022"},{"Name":"Last-Modified","Value":"Fri, 17 Apr 2026 20:03:41 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SIMPE.Dashboard/dashboard.1s9gfjsw8i.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\dashboard.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1s9gfjsw8i"},{"Name":"integrity","Value":"sha256-gfBj3qfkBQkM4DXnAh0qUNEDBP\u002BR4TfFWWfd1pUfvrI="},{"Name":"label","Value":"_content/SIMPE.Dashboard/dashboard.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"25464"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022gfBj3qfkBQkM4DXnAh0qUNEDBP\u002BR4TfFWWfd1pUfvrI=\u0022"},{"Name":"Last-Modified","Value":"Fri, 17 Apr 2026 21:33:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SIMPE.Dashboard/dashboard.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\dashboard.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gfBj3qfkBQkM4DXnAh0qUNEDBP\u002BR4TfFWWfd1pUfvrI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"25464"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022gfBj3qfkBQkM4DXnAh0qUNEDBP\u002BR4TfFWWfd1pUfvrI=\u0022"},{"Name":"Last-Modified","Value":"Fri, 17 Apr 2026 21:33:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SIMPE.Dashboard/images/logo.5ap03x6r46.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\logo.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5ap03x6r46"},{"Name":"integrity","Value":"sha256-/aajLUzWWQ027pIioHfoch0Sa\u002BeppkjaYCg1etHD5LQ="},{"Name":"label","Value":"_content/SIMPE.Dashboard/images/logo.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"356335"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022/aajLUzWWQ027pIioHfoch0Sa\u002BeppkjaYCg1etHD5LQ=\u0022"},{"Name":"Last-Modified","Value":"Mon, 13 Apr 2026 20:06:57 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SIMPE.Dashboard/images/logo.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\logo.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-/aajLUzWWQ027pIioHfoch0Sa\u002BeppkjaYCg1etHD5LQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"356335"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022/aajLUzWWQ027pIioHfoch0Sa\u002BeppkjaYCg1etHD5LQ=\u0022"},{"Name":"Last-Modified","Value":"Mon, 13 Apr 2026 20:06:57 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SIMPE.Dashboard/index.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-XGVolCpaSwysyzWPkukooANphdXnzG8XDEP\u002B2rum6NM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4922"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022XGVolCpaSwysyzWPkukooANphdXnzG8XDEP\u002B2rum6NM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 17 Apr 2026 20:26:35 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SIMPE.Dashboard/index.wh2gejftgf.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wh2gejftgf"},{"Name":"integrity","Value":"sha256-XGVolCpaSwysyzWPkukooANphdXnzG8XDEP\u002B2rum6NM="},{"Name":"label","Value":"_content/SIMPE.Dashboard/index.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4922"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022XGVolCpaSwysyzWPkukooANphdXnzG8XDEP\u002B2rum6NM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 17 Apr 2026 20:26:35 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SIMPE.Dashboard/js/app.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\app.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zf1YvfznR2h2GOzrw5m5XeN330yphuyxJ4/xrYIF0sk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5696"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022zf1YvfznR2h2GOzrw5m5XeN330yphuyxJ4/xrYIF0sk=\u0022"},{"Name":"Last-Modified","Value":"Fri, 17 Apr 2026 20:55:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SIMPE.Dashboard/js/app.tcoqs1wjh7.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\app.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tcoqs1wjh7"},{"Name":"integrity","Value":"sha256-zf1YvfznR2h2GOzrw5m5XeN330yphuyxJ4/xrYIF0sk="},{"Name":"label","Value":"_content/SIMPE.Dashboard/js/app.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5696"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022zf1YvfznR2h2GOzrw5m5XeN330yphuyxJ4/xrYIF0sk=\u0022"},{"Name":"Last-Modified","Value":"Fri, 17 Apr 2026 20:55:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

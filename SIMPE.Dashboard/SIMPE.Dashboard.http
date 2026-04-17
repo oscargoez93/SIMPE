@@ -1,0 +1,6 @@
+@SIMPE.Dashboard_HostAddress = http://localhost:5240
+
+GET {{SIMPE.Dashboard_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

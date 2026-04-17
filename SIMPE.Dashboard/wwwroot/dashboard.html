@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPE Dashboard - Panel Principal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Estilos específicos del Dashboard sobreescribiendo el body centrado del login */
+        body {
+            display: block;
+            background-color: var(--bg-dark);
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .dashboard-layout {
+            display: flex;
+            min-height: 100vh;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Sidebar Glassmorphism */
+        .sidebar {
+            width: 260px;
+            background: rgba(15, 23, 42, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-right: 1px solid var(--card-border);
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .sidebar-logo h2 {
+            font-size: 1.25rem;
+            color: var(--text-main);
+            letter-spacing: -0.02em;
+        }
+
+        .nav-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            color: var(--text-muted);
+            text-decoration: none;
+            border-radius: 12px;
+            transition: all 0.2s ease;
+            font-weight: 500;
+        }
+
+        .nav-item:hover, .nav-item.active {
+            color: var(--text-main);
+            background: rgba(74, 222, 128, 0.1);
+        }
+
+        .nav-item.active {
+            color: var(--primary);
+            box-shadow: inset 3px 0 0 var(--primary);
+        }
+
+        .logout-btn {
+            margin-top: auto;
+            color: #ef4444;
+        }
+
+        .logout-btn:hover {
+            background: rgba(239, 68, 68, 0.1);
+            color: #fca5a5;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        .user-profile {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: var(--card-bg);
+            padding: 8px 16px;
+            border-radius: 30px;
+            border: 1px solid var(--card-border);
+        }
+
+        .avatar {
+            width: 35px;
+            height: 35px;
+            background: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--bg-dark);
+            font-weight: 700;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .stat-trend {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.85rem;
+            color: var(--primary);
+        }
+
+        /* Table Section */
+        .content-section {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 25px;
+            flex: 1;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+            padding: 15px;
+            color: var(--text-muted);
+            font-weight: 500;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--text-main);
+        }
+
+        tr:hover td {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .status-badge {
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .status-online {
+            background: rgba(244, 121, 32, 0.15);
+            color: #F47920;
+        }
+
+        .status-offline {
+            background: rgba(239, 68, 68, 0.15);
+            color: #ef4444;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2" style="right: 100px; bottom: 100px;"></div>
+
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <img src="images/logo.png" alt="Visión Gerencial" style="max-width: 90%; height: auto; margin-bottom: 20px;">
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active" id="navOverview">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg>
+                    Vista General
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    Agentes Activos
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    Métricas Globales
+                </a>
+                <a href="#" class="nav-item" id="navSettings">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    Ajustes
+                </a>
+                
+                <a href="index.html" class="nav-item logout-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                    Cerrar Sesión
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <div id="headerTitle">
+                    <h1>Hola, Admin 👋</h1>
+                    <p style="color: var(--text-muted);">Aquí tienes el resumen de tus agentes.</p>
+                </div>
+                <div class="user-profile">
+                    <div class="avatar">A</div>
+                    <span>Administrador</span>
+                </div>
+            </header>
+
+            <!-- Vista General -->
+            <div id="viewOverview" style="display: flex; flex-direction: column; gap: 30px;">
+                <!-- Stats -->
+                <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span>Total de Agentes</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                    </div>
+                    <div class="stat-value">24</div>
+                    <div class="stat-trend">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                        <span>+12% esta semana</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span>Agentes Activos (Online)</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F47920" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    </div>
+                    <div class="stat-value">18</div>
+                    <div class="stat-trend" style="color: var(--text-muted);">
+                        <span>Uso estable</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span>Alertas Recientes</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                    </div>
+                    <div class="stat-value">3</div>
+                    <div class="stat-trend" style="color: #ef4444;">
+                        <span>Requieren revisión</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table -->
+            <section class="content-section">
+                <div class="section-header">
+                    <h2>Últimos Agentes Registrados</h2>
+                    <button class="btn-primary" style="padding: 10px 20px; font-size: 0.9rem; border-radius: 8px;">
+                        Ver todos
+                    </button>
+                </div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>MAC Address</th>
+                                <th>HostName</th>
+                                <th>Sistema Operativo</th>
+                                <th>Última Sincronización</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>74:4C:A1:A0:19:15</td>
+                                <td>DESKTOP-ABC1234</td>
+                                <td>Windows 11 Pro</td>
+                                <td>Hace 2 minutos</td>
+                                <td><span class="status-badge status-online">Online</span></td>
+                            </tr>
+                            <tr>
+                                <td>A1:B2:C3:D4:E5:F6</td>
+                                <td>LAPTOP-DEV01</td>
+                                <td>Windows 10 Enterprise</td>
+                                <td>Hace 15 minutos</td>
+                                <td><span class="status-badge status-online">Online</span></td>
+                            </tr>
+                            <tr>
+                                <td>00:1A:2B:3C:4D:5E</td>
+                                <td>SERVER-DB-01</td>
+                                <td>Ubuntu 22.04 LTS</td>
+                                <td>Hace 3 horas</td>
+                                <td><span class="status-badge status-offline">Offline</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            </div><!-- /fin viewOverview -->
+
+            <!-- Vista Ajustes (Usuarios) -->
+            <div id="viewSettings" style="display: none; flex-direction: column; gap: 30px;">
+                <section class="content-section">
+                    <div class="section-header">
+                        <h2>Gestión de Usuarios</h2>
+                        <button class="btn-primary" style="padding: 10px 20px; font-size: 0.9rem; border-radius: 8px;" id="btnRefreshUsers">
+                            Actualizar Lista
+                        </button>
+                    </div>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nombre</th>
+                                    <th>Correo Electrónico</th>
+                                    <th>Estado</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="usersTableBody">
+                                <!-- Filas de usuarios llenadas por JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal Restablecer Contraseña -->
+    <div id="resetPasswordModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); backdrop-filter: blur(5px); z-index: 100; justify-content: center; align-items: center;">
+        <div style="background: var(--card-bg); border: 1px solid var(--card-border); padding: 30px; border-radius: 20px; width: 90%; max-width: 400px; box-shadow: 0 20px 40px rgba(0,0,0,0.4);">
+            <h3 style="margin-top: 0; margin-bottom: 20px; color: var(--text-main);">Restablecer Contraseña</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;" id="resetModalUserText"></p>
+            
+            <div class="input-group" style="margin-bottom: 20px;">
+                <label style="display: block; color: var(--text-muted); font-size: 0.85rem; font-weight: 500; margin-bottom: 8px;">Nueva Contraseña</label>
+                <div class="input-wrapper" style="position: relative;">
+                    <input type="password" id="newPasswordInput" style="width: 100%; padding: 12px 16px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 12px; color: var(--text-main); font-size: 0.95rem; outline: none; transition: all 0.3s;" placeholder="Escribe la nueva contraseña">
+                </div>
+            </div>
+
+            <div id="resetModalError" style="display: none; color: #ef4444; font-size: 0.85rem; margin-bottom: 15px; padding: 10px; background: rgba(239, 68, 68, 0.1); border-radius: 8px;"></div>
+            <div id="resetModalSuccess" style="display: none; color: #4ade80; font-size: 0.85rem; margin-bottom: 15px; padding: 10px; background: rgba(74, 222, 128, 0.1); border-radius: 8px;"></div>
+
+            <div style="display: flex; gap: 10px; justify-content: flex-end;">
+                <button id="cancelResetBtn" style="padding: 10px 15px; border: none; border-radius: 8px; background: transparent; color: var(--text-muted); cursor: pointer; transition: 0.3s; font-weight: 500;">Cancelar</button>
+                <button id="confirmResetBtn" class="btn-primary" style="padding: 10px 20px; border-radius: 8px;">Guardar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script de lógica Dashboard y Usuarios -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navOverview = document.getElementById('navOverview');
+            const navSettings = document.getElementById('navSettings');
+            const viewOverview = document.getElementById('viewOverview');
+            const viewSettings = document.getElementById('viewSettings');
+            const headerTitle = document.getElementById('headerTitle');
+            const usersTableBody = document.getElementById('usersTableBody');
+            const btnRefreshUsers = document.getElementById('btnRefreshUsers');
+
+            // Lógica Modal
+            const modal = document.getElementById('resetPasswordModal');
+            const closeBtn = document.getElementById('cancelResetBtn');
+            const confirmBtn = document.getElementById('confirmResetBtn');
+            const newPasswordInput = document.getElementById('newPasswordInput');
+            const modalUserText = document.getElementById('resetModalUserText');
+            const errorMsg = document.getElementById('resetModalError');
+            const successMsg = document.getElementById('resetModalSuccess');
+            let currentUserIdToReset = null;
+
+            // Navegación SPA
+            navOverview.addEventListener('click', (e) => {
+                e.preventDefault();
+                navSettings.classList.remove('active');
+                navOverview.classList.add('active');
+                viewSettings.style.display = 'none';
+                viewOverview.style.display = 'flex';
+                headerTitle.innerHTML = `<h1>Hola, Admin 👋</h1><p style="color: var(--text-muted);">Aquí tienes el resumen de tus agentes.</p>`;
+            });
+
+            navSettings.addEventListener('click', (e) => {
+                e.preventDefault();
+                navOverview.classList.remove('active');
+                navSettings.classList.add('active');
+                viewOverview.style.display = 'none';
+                viewSettings.style.display = 'flex';
+                headerTitle.innerHTML = `<h1>Ajustes ⚙️</h1><p style="color: var(--text-muted);">Configuración global del sistema y usuarios.</p>`;
+                loadUsers();
+            });
+
+            btnRefreshUsers.addEventListener('click', loadUsers);
+
+            async function loadUsers() {
+                usersTableBody.innerHTML = '<tr><td colspan="5" style="text-align: center;">Cargando usuarios...</td></tr>';
+                try {
+                    const res = await fetch('/api/users');
+                    if (!res.ok) throw new Error('Error al cargar usuarios');
+                    const users = await res.json();
+                    
+                    usersTableBody.innerHTML = '';
+                    if (users.length === 0) {
+                        usersTableBody.innerHTML = '<tr><td colspan="5" style="text-align: center;">No hay usuarios registrados.</td></tr>';
+                        return;
+                    }
+
+                    users.forEach(u => {
+                        const tr = document.createElement('tr');
+                        const statusBadge = u.isApproved ? 
+                            `<span class="status-badge status-online">Aprobado</span>` : 
+                            `<span class="status-badge status-offline">Pendiente</span>`;
+
+                        tr.innerHTML = `
+                            <td>${u.id}</td>
+                            <td>${u.fullName}</td>
+                            <td>${u.email}</td>
+                            <td>${statusBadge}</td>
+                            <td>
+                                <button class="reset-pass-btn" data-id="${u.id}" data-name="${u.fullName}" style="background: rgba(244, 121, 32, 0.1); color: #F47920; border: 1px solid rgba(244, 121, 32, 0.3); padding: 6px 12px; border-radius: 6px; cursor: pointer; transition: 0.2s;">Cambiar Clave</button>
+                            </td>
+                        `;
+                        usersTableBody.appendChild(tr);
+                    });
+
+                    // Asignar eventos a los nuevos botones
+                    document.querySelectorAll('.reset-pass-btn').forEach(btn => {
+                        btn.addEventListener('click', (e) => {
+                            const id = e.target.getAttribute('data-id');
+                            const name = e.target.getAttribute('data-name');
+                            openResetModal(id, name);
+                        });
+                    });
+
+                } catch (err) {
+                    usersTableBody.innerHTML = `<tr><td colspan="5" style="text-align: center; color: #ef4444;">${err.message}</td></tr>`;
+                }
+            }
+
+            function openResetModal(userId, userName) {
+                currentUserIdToReset = userId;
+                modalUserText.textContent = `Cambiarás la contraseña del usuario: ${userName} (ID: ${userId})`;
+                newPasswordInput.value = '';
+                errorMsg.style.display = 'none';
+                successMsg.style.display = 'none';
+                confirmBtn.disabled = false;
+                confirmBtn.innerText = 'Guardar';
+                modal.style.display = 'flex';
+            }
+
+            closeBtn.addEventListener('click', () => {
+                modal.style.display = 'none';
+                currentUserIdToReset = null;
+            });
+
+            confirmBtn.addEventListener('click', async () => {
+                const pass = newPasswordInput.value.trim();
+                errorMsg.style.display = 'none';
+                successMsg.style.display = 'none';
+
+                if (!pass) {
+                    errorMsg.textContent = 'Debes ingresar una contraseña.';
+                    errorMsg.style.display = 'block';
+                    return;
+                }
+
+                confirmBtn.disabled = true;
+                confirmBtn.innerText = 'Guardando...';
+
+                try {
+                    const res = await fetch(`/api/users/${currentUserIdToReset}/reset-password`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ newPassword: pass })
+                    });
+
+                    if (res.ok) {
+                        const data = await res.json();
+                        successMsg.textContent = data.message;
+                        successMsg.style.display = 'block';
+                        setTimeout(() => {
+                            modal.style.display = 'none';
+                        }, 1500);
+                    } else {
+                        const errText = await res.text();
+                        throw new Error(errText);
+                    }
+                } catch (err) {
+                    errorMsg.textContent = err.message || 'Error al restablecer la contraseña';
+                    errorMsg.style.display = 'block';
+                    confirmBtn.disabled = false;
+                    confirmBtn.innerText = 'Guardar';
+                }
+            });
+        });
+    </script>
+</main>
+    </div>
+</body>
+</html>

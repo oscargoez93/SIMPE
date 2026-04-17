@@ -66,3 +66,4 @@ C:\Users\Oscar\Documents\SIMPE\SIMPE.Agent\obj\Debug\net9.0\SIMPE.Agent.genrunti
 C:\Users\Oscar\Documents\SIMPE\SIMPE.Agent\obj\Debug\net9.0\ref\SIMPE.Agent.dll
 C:\Users\Oscar\Documents\SIMPE\SIMPE.Agent\obj\Debug\net9.0\compressed\t7rezoyb1h-r0jqnfkmia.gz
 C:\Users\Oscar\Documents\SIMPE\SIMPE.Agent\obj\Debug\net9.0\compressed\52uafj83cm-0k9jccemok.gz
+C:\Users\Oscar\Documents\SIMPE\SIMPE.Agent\obj\Debug\net9.0\SIMPE.Agent.sourcelink.json

@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Dashboard\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Dashboard\\wwwroot\\dashboard.html",
+      "PackagePath": "staticwebassets\\dashboard.html"
+    },
+    {
+      "Id": "C:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Dashboard\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Dashboard\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Dashboard\\wwwroot\\js\\app.js",
+      "PackagePath": "staticwebassets\\js\\app.js"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.SIMPE.Dashboard.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.SIMPE.Dashboard.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.SIMPE.Dashboard.props",
+      "PackagePath": "build\\SIMPE.Dashboard.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.SIMPE.Dashboard.props",
+      "PackagePath": "buildMultiTargeting\\SIMPE.Dashboard.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.SIMPE.Dashboard.props",
+      "PackagePath": "buildTransitive\\SIMPE.Dashboard.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
