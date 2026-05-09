@@ -12,17 +12,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ralpmh46v3"},{"Name":"integrity","Value":"sha256-E7LXRk7Y\u002B7Z4g9txhLEYXqDrCYKCIjZ7Ct2lz/YV/2g="},{"Name":"label","Value":"_content/SIMPE.Dashboard/css/style.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6160"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022E7LXRk7Y\u002B7Z4g9txhLEYXqDrCYKCIjZ7Ct2lz/YV/2g=\u0022"},{"Name":"Last-Modified","Value":"Fri, 17 Apr 2026 20:03:41 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/SIMPE.Dashboard/dashboard.1s9gfjsw8i.html">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\dashboard.html'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1s9gfjsw8i"},{"Name":"integrity","Value":"sha256-gfBj3qfkBQkM4DXnAh0qUNEDBP\u002BR4TfFWWfd1pUfvrI="},{"Name":"label","Value":"_content/SIMPE.Dashboard/dashboard.html"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"25464"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022gfBj3qfkBQkM4DXnAh0qUNEDBP\u002BR4TfFWWfd1pUfvrI=\u0022"},{"Name":"Last-Modified","Value":"Fri, 17 Apr 2026 21:33:58 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SIMPE.Dashboard/dashboard.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\dashboard.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-gfBj3qfkBQkM4DXnAh0qUNEDBP\u002BR4TfFWWfd1pUfvrI="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"25464"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022gfBj3qfkBQkM4DXnAh0qUNEDBP\u002BR4TfFWWfd1pUfvrI=\u0022"},{"Name":"Last-Modified","Value":"Fri, 17 Apr 2026 21:33:58 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-S/4EgQpkLy7Fob0w6elHhfGkK7SvQ2LG1Y2aCJG4Yr8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"40184"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022S/4EgQpkLy7Fob0w6elHhfGkK7SvQ2LG1Y2aCJG4Yr8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 29 Apr 2026 04:18:21 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SIMPE.Dashboard/dashboard.lk9528y7zq.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\dashboard.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"lk9528y7zq"},{"Name":"integrity","Value":"sha256-S/4EgQpkLy7Fob0w6elHhfGkK7SvQ2LG1Y2aCJG4Yr8="},{"Name":"label","Value":"_content/SIMPE.Dashboard/dashboard.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"40184"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022S/4EgQpkLy7Fob0w6elHhfGkK7SvQ2LG1Y2aCJG4Yr8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 29 Apr 2026 04:18:21 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/SIMPE.Dashboard/images/logo.5ap03x6r46.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\logo.png'))</AssetFile>

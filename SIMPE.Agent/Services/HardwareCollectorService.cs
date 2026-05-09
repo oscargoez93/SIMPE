@@ -7,6 +7,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using SIMPE.Agent.Models;
 using System.Text.Json;
+using System.Net.Http;
+using System.Net.Http.Json;
 
 namespace SIMPE.Agent.Services
 {
@@ -14,11 +16,14 @@ namespace SIMPE.Agent.Services
     {
         private readonly ILogger<HardwareCollectorService> _logger;
         private readonly DatabaseService _dbService;
+        private readonly HttpClient _httpClient;
 
         public HardwareCollectorService(ILogger<HardwareCollectorService> logger, DatabaseService dbService)
         {
             _logger = logger;
             _dbService = dbService;
+            _httpClient = new HttpClient();
+            _httpClient.BaseAddress = new Uri("http://localhost:5240/"); // Dashboard URL
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -31,7 +36,24 @@ namespace SIMPE.Agent.Services
                 {
                     var pcInfo = GatherHardwareInfo();
                     await _dbService.UpsertEquipoAsync(pcInfo);
-                    _logger.LogInformation($"Hardware data synced for {pcInfo.id_equipo} at {DateTime.Now}");
+                    _logger.LogInformation($"Hardware data synced locally for {pcInfo.id_equipo} at {DateTime.Now}");
+
+                    try 
+                    {
+                        var response = await _httpClient.PostAsJsonAsync("api/equipos/sync", pcInfo);
+                        if(response.IsSuccessStatusCode)
+                        {
+                            _logger.LogInformation($"Hardware data synced to Dashboard successfully.");
+                        }
+                        else
+                        {
+                            _logger.LogWarning($"Failed to sync to Dashboard. Status code: {response.StatusCode}");
+                        }
+                    }
+                    catch (Exception httpEx)
+                    {
+                        _logger.LogError(httpEx, "Error syncing to Dashboard server");
+                    }
                 }
                 catch (Exception ex)
                 {

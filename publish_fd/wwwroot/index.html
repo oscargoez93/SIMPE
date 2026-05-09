@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPE - Hardware Monitor</title>
+    <!-- Use a modern Google Font (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb" id="orb1"></div>
+        <div class="glow-orb" id="orb2"></div>
+    </div>
+
+    <div class="container">
+        <header class="dashboard-header">
+            <div>
+                <h1>Panel de Monitoreo <span class="highlight">SIMPE</span></h1>
+                <p>Agente Local de Especificaciones de Hardware</p>
+            </div>
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                <span id="last-update">Conectando...</span>
+            </div>
+        </header>
+
+        <nav class="dashboard-nav">
+            <button class="nav-item active" data-view="hardware">Inventario/Hardware</button>
+            <button class="nav-item" data-view="security">Seguridad</button>
+            <button class="nav-item" data-view="performance">Rendimiento/Metricas</button>
+            <button class="nav-item" data-view="navigation">Navegacion</button>
+        </nav>
+
+        <main class="grid-container" id="dashboard-cards">
+            <!-- Data will be injected here via JS -->
+            <div class="loading">Cargando datos del equipo...</div>
+        </main>
+    </div>
+
+    <!-- Template for cards -->
+    <template id="card-template">
+        <div class="card glass">
+            <div class="card-icon">
+                <svg viewBox="0 0 24 24" fill="none" class="icon-svg"></svg>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Título</h3>
+                <p class="card-value">Valor</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="app.js"></script>
+</body>
+</html>

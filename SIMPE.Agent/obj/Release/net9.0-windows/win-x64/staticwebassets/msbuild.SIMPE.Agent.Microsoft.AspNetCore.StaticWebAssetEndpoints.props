@@ -1,0 +1,40 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/SIMPE.Agent/app.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-t/OKUqB6AUkzvV0RxLfCmdUSlkpxPKM4A5J28nrYF8c="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"35293"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022t/OKUqB6AUkzvV0RxLfCmdUSlkpxPKM4A5J28nrYF8c=\u0022"},{"Name":"Last-Modified","Value":"Sat, 09 May 2026 02:15:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SIMPE.Agent/app.rv4oh17wmp.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rv4oh17wmp"},{"Name":"integrity","Value":"sha256-t/OKUqB6AUkzvV0RxLfCmdUSlkpxPKM4A5J28nrYF8c="},{"Name":"label","Value":"_content/SIMPE.Agent/app.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"35293"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022t/OKUqB6AUkzvV0RxLfCmdUSlkpxPKM4A5J28nrYF8c=\u0022"},{"Name":"Last-Modified","Value":"Sat, 09 May 2026 02:15:20 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SIMPE.Agent/index.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-z9cIgFAo\u002B1x77ft0VGtNcpqYCDe51c9I0yUFYoxQ8/o="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2075"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022z9cIgFAo\u002B1x77ft0VGtNcpqYCDe51c9I0yUFYoxQ8/o=\u0022"},{"Name":"Last-Modified","Value":"Sat, 09 May 2026 02:15:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SIMPE.Agent/index.jfebu7qzbg.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"jfebu7qzbg"},{"Name":"integrity","Value":"sha256-z9cIgFAo\u002B1x77ft0VGtNcpqYCDe51c9I0yUFYoxQ8/o="},{"Name":"label","Value":"_content/SIMPE.Agent/index.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2075"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022z9cIgFAo\u002B1x77ft0VGtNcpqYCDe51c9I0yUFYoxQ8/o=\u0022"},{"Name":"Last-Modified","Value":"Sat, 09 May 2026 02:15:34 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SIMPE.Agent/style.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\style.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-usqE2SVD16lMICejpueGuQms6ynWowQ5QQlYdwXZ24k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"14413"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022usqE2SVD16lMICejpueGuQms6ynWowQ5QQlYdwXZ24k=\u0022"},{"Name":"Last-Modified","Value":"Fri, 08 May 2026 23:23:55 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/SIMPE.Agent/style.qsr0mac5mx.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\style.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qsr0mac5mx"},{"Name":"integrity","Value":"sha256-usqE2SVD16lMICejpueGuQms6ynWowQ5QQlYdwXZ24k="},{"Name":"label","Value":"_content/SIMPE.Agent/style.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"14413"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022usqE2SVD16lMICejpueGuQms6ynWowQ5QQlYdwXZ24k=\u0022"},{"Name":"Last-Modified","Value":"Fri, 08 May 2026 23:23:55 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

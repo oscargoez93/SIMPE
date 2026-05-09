@@ -1,0 +1,1042 @@
+{
+  "Version": 1,
+  "Hash": "I8ApQYyu5t9iSpYpH5f2KXiMNebmKdwxCzgVZ4+RxP4=",
+  "Source": "SIMPE.Agent",
+  "BasePath": "_content/SIMPE.Agent",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "SIMPE.Agent\\wwwroot",
+      "Source": "SIMPE.Agent",
+      "ContentRoot": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\wwwroot\\",
+      "BasePath": "_content/SIMPE.Agent",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\obj\\Release\\net9.0-windows\\win-x64\\compressed\\52uafj83cm-qsr0mac5mx.gz",
+      "SourceId": "SIMPE.Agent",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\obj\\Release\\net9.0-windows\\win-x64\\compressed\\",
+      "BasePath": "_content/SIMPE.Agent",
+      "RelativePath": "style#[.{fingerprint=qsr0mac5mx}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\wwwroot\\style.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "f07f7f5t5e",
+      "Integrity": "wZus/I11He+z21G8lVWb3E4G79vGbMUwUSWFAy28JwI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\wwwroot\\style.css"
+    },
+    {
+      "Identity": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\obj\\Release\\net9.0-windows\\win-x64\\compressed\\n6pg7szscz-rv4oh17wmp.gz",
+      "SourceId": "SIMPE.Agent",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\obj\\Release\\net9.0-windows\\win-x64\\compressed\\",
+      "BasePath": "_content/SIMPE.Agent",
+      "RelativePath": "app#[.{fingerprint=rv4oh17wmp}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\wwwroot\\app.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "nd6rn91m2y",
+      "Integrity": "CyRjCLrvGsMwDopeU9Sa+pfHzuHaByNmrSMKH84D6ug=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\wwwroot\\app.js"
+    },
+    {
+      "Identity": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\obj\\Release\\net9.0-windows\\win-x64\\compressed\\t7rezoyb1h-jfebu7qzbg.gz",
+      "SourceId": "SIMPE.Agent",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\obj\\Release\\net9.0-windows\\win-x64\\compressed\\",
+      "BasePath": "_content/SIMPE.Agent",
+      "RelativePath": "index#[.{fingerprint=jfebu7qzbg}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\wwwroot\\index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "z60cvwy2xl",
+      "Integrity": "+yppWK8fKIduwSN9kcX0kqTycUFVjvrO23pwyje461Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\wwwroot\\index.html"
+    },
+    {
+      "Identity": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\wwwroot\\app.js",
+      "SourceId": "SIMPE.Agent",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\wwwroot\\",
+      "BasePath": "_content/SIMPE.Agent",
+      "RelativePath": "app#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rv4oh17wmp",
+      "Integrity": "t/OKUqB6AUkzvV0RxLfCmdUSlkpxPKM4A5J28nrYF8c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\app.js"
+    },
+    {
+      "Identity": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\wwwroot\\index.html",
+      "SourceId": "SIMPE.Agent",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\wwwroot\\",
+      "BasePath": "_content/SIMPE.Agent",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jfebu7qzbg",
+      "Integrity": "z9cIgFAo+1x77ft0VGtNcpqYCDe51c9I0yUFYoxQ8/o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\wwwroot\\style.css",
+      "SourceId": "SIMPE.Agent",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\wwwroot\\",
+      "BasePath": "_content/SIMPE.Agent",
+      "RelativePath": "style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qsr0mac5mx",
+      "Integrity": "usqE2SVD16lMICejpueGuQms6ynWowQ5QQlYdwXZ24k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\style.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "app.js",
+      "AssetFile": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\obj\\Release\\net9.0-windows\\win-x64\\compressed\\n6pg7szscz-rv4oh17wmp.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000131492439"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7604"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CyRjCLrvGsMwDopeU9Sa+pfHzuHaByNmrSMKH84D6ug=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 09 May 2026 02:15:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"t/OKUqB6AUkzvV0RxLfCmdUSlkpxPKM4A5J28nrYF8c=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-t/OKUqB6AUkzvV0RxLfCmdUSlkpxPKM4A5J28nrYF8c="
+        }
+      ]
+    },
+    {
+      "Route": "app.js",
+      "AssetFile": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\wwwroot\\app.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35293"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"t/OKUqB6AUkzvV0RxLfCmdUSlkpxPKM4A5J28nrYF8c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 09 May 2026 02:15:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-t/OKUqB6AUkzvV0RxLfCmdUSlkpxPKM4A5J28nrYF8c="
+        }
+      ]
+    },
+    {
+      "Route": "app.js.gz",
+      "AssetFile": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\obj\\Release\\net9.0-windows\\win-x64\\compressed\\n6pg7szscz-rv4oh17wmp.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7604"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CyRjCLrvGsMwDopeU9Sa+pfHzuHaByNmrSMKH84D6ug=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 09 May 2026 02:15:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CyRjCLrvGsMwDopeU9Sa+pfHzuHaByNmrSMKH84D6ug="
+        }
+      ]
+    },
+    {
+      "Route": "app.rv4oh17wmp.js",
+      "AssetFile": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\obj\\Release\\net9.0-windows\\win-x64\\compressed\\n6pg7szscz-rv4oh17wmp.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000131492439"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7604"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CyRjCLrvGsMwDopeU9Sa+pfHzuHaByNmrSMKH84D6ug=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 09 May 2026 02:15:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"t/OKUqB6AUkzvV0RxLfCmdUSlkpxPKM4A5J28nrYF8c=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rv4oh17wmp"
+        },
+        {
+          "Name": "label",
+          "Value": "app.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-t/OKUqB6AUkzvV0RxLfCmdUSlkpxPKM4A5J28nrYF8c="
+        }
+      ]
+    },
+    {
+      "Route": "app.rv4oh17wmp.js",
+      "AssetFile": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\wwwroot\\app.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35293"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"t/OKUqB6AUkzvV0RxLfCmdUSlkpxPKM4A5J28nrYF8c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 09 May 2026 02:15:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rv4oh17wmp"
+        },
+        {
+          "Name": "label",
+          "Value": "app.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-t/OKUqB6AUkzvV0RxLfCmdUSlkpxPKM4A5J28nrYF8c="
+        }
+      ]
+    },
+    {
+      "Route": "app.rv4oh17wmp.js.gz",
+      "AssetFile": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\obj\\Release\\net9.0-windows\\win-x64\\compressed\\n6pg7szscz-rv4oh17wmp.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7604"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CyRjCLrvGsMwDopeU9Sa+pfHzuHaByNmrSMKH84D6ug=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 09 May 2026 02:15:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rv4oh17wmp"
+        },
+        {
+          "Name": "label",
+          "Value": "app.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CyRjCLrvGsMwDopeU9Sa+pfHzuHaByNmrSMKH84D6ug="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\obj\\Release\\net9.0-windows\\win-x64\\compressed\\t7rezoyb1h-jfebu7qzbg.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001157407407"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "863"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+yppWK8fKIduwSN9kcX0kqTycUFVjvrO23pwyje461Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 09 May 2026 02:15:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"z9cIgFAo+1x77ft0VGtNcpqYCDe51c9I0yUFYoxQ8/o=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z9cIgFAo+1x77ft0VGtNcpqYCDe51c9I0yUFYoxQ8/o="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2075"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z9cIgFAo+1x77ft0VGtNcpqYCDe51c9I0yUFYoxQ8/o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 09 May 2026 02:15:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z9cIgFAo+1x77ft0VGtNcpqYCDe51c9I0yUFYoxQ8/o="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\obj\\Release\\net9.0-windows\\win-x64\\compressed\\t7rezoyb1h-jfebu7qzbg.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "863"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+yppWK8fKIduwSN9kcX0kqTycUFVjvrO23pwyje461Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 09 May 2026 02:15:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+yppWK8fKIduwSN9kcX0kqTycUFVjvrO23pwyje461Q="
+        }
+      ]
+    },
+    {
+      "Route": "index.jfebu7qzbg.html",
+      "AssetFile": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\obj\\Release\\net9.0-windows\\win-x64\\compressed\\t7rezoyb1h-jfebu7qzbg.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001157407407"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "863"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+yppWK8fKIduwSN9kcX0kqTycUFVjvrO23pwyje461Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 09 May 2026 02:15:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"z9cIgFAo+1x77ft0VGtNcpqYCDe51c9I0yUFYoxQ8/o=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jfebu7qzbg"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z9cIgFAo+1x77ft0VGtNcpqYCDe51c9I0yUFYoxQ8/o="
+        }
+      ]
+    },
+    {
+      "Route": "index.jfebu7qzbg.html",
+      "AssetFile": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2075"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z9cIgFAo+1x77ft0VGtNcpqYCDe51c9I0yUFYoxQ8/o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 09 May 2026 02:15:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jfebu7qzbg"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z9cIgFAo+1x77ft0VGtNcpqYCDe51c9I0yUFYoxQ8/o="
+        }
+      ]
+    },
+    {
+      "Route": "index.jfebu7qzbg.html.gz",
+      "AssetFile": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\obj\\Release\\net9.0-windows\\win-x64\\compressed\\t7rezoyb1h-jfebu7qzbg.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "863"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+yppWK8fKIduwSN9kcX0kqTycUFVjvrO23pwyje461Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 09 May 2026 02:15:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jfebu7qzbg"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+yppWK8fKIduwSN9kcX0kqTycUFVjvrO23pwyje461Q="
+        }
+      ]
+    },
+    {
+      "Route": "style.css",
+      "AssetFile": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\obj\\Release\\net9.0-windows\\win-x64\\compressed\\52uafj83cm-qsr0mac5mx.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000312500000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3199"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wZus/I11He+z21G8lVWb3E4G79vGbMUwUSWFAy28JwI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 08 May 2026 23:23:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"usqE2SVD16lMICejpueGuQms6ynWowQ5QQlYdwXZ24k=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-usqE2SVD16lMICejpueGuQms6ynWowQ5QQlYdwXZ24k="
+        }
+      ]
+    },
+    {
+      "Route": "style.css",
+      "AssetFile": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\wwwroot\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"usqE2SVD16lMICejpueGuQms6ynWowQ5QQlYdwXZ24k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 08 May 2026 23:23:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-usqE2SVD16lMICejpueGuQms6ynWowQ5QQlYdwXZ24k="
+        }
+      ]
+    },
+    {
+      "Route": "style.css.gz",
+      "AssetFile": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\obj\\Release\\net9.0-windows\\win-x64\\compressed\\52uafj83cm-qsr0mac5mx.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3199"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wZus/I11He+z21G8lVWb3E4G79vGbMUwUSWFAy28JwI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 08 May 2026 23:23:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wZus/I11He+z21G8lVWb3E4G79vGbMUwUSWFAy28JwI="
+        }
+      ]
+    },
+    {
+      "Route": "style.qsr0mac5mx.css",
+      "AssetFile": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\obj\\Release\\net9.0-windows\\win-x64\\compressed\\52uafj83cm-qsr0mac5mx.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000312500000"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3199"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wZus/I11He+z21G8lVWb3E4G79vGbMUwUSWFAy28JwI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 08 May 2026 23:23:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"usqE2SVD16lMICejpueGuQms6ynWowQ5QQlYdwXZ24k=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qsr0mac5mx"
+        },
+        {
+          "Name": "label",
+          "Value": "style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-usqE2SVD16lMICejpueGuQms6ynWowQ5QQlYdwXZ24k="
+        }
+      ]
+    },
+    {
+      "Route": "style.qsr0mac5mx.css",
+      "AssetFile": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\wwwroot\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14413"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"usqE2SVD16lMICejpueGuQms6ynWowQ5QQlYdwXZ24k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 08 May 2026 23:23:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qsr0mac5mx"
+        },
+        {
+          "Name": "label",
+          "Value": "style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-usqE2SVD16lMICejpueGuQms6ynWowQ5QQlYdwXZ24k="
+        }
+      ]
+    },
+    {
+      "Route": "style.qsr0mac5mx.css.gz",
+      "AssetFile": "c:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Agent\\obj\\Release\\net9.0-windows\\win-x64\\compressed\\52uafj83cm-qsr0mac5mx.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3199"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wZus/I11He+z21G8lVWb3E4G79vGbMUwUSWFAy28JwI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 08 May 2026 23:23:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qsr0mac5mx"
+        },
+        {
+          "Name": "label",
+          "Value": "style.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wZus/I11He+z21G8lVWb3E4G79vGbMUwUSWFAy28JwI="
+        }
+      ]
+    }
+  ]
+}

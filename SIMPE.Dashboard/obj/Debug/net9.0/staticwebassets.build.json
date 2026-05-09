@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ssqq005I/Gdi5ugZN4OW4QRqI3VDiXliEGJzq9sLAZs=",
+  "Hash": "0PjNWJlpxi9R60Nu6+82QNnvgz+iUkKXafOtexeUm9A=",
   "Source": "SIMPE.Dashboard",
   "BasePath": "_content/SIMPE.Dashboard",
   "Mode": "Default",
@@ -38,12 +38,12 @@
       "OriginalItemSpec": "C:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Dashboard\\wwwroot\\js\\app.js"
     },
     {
-      "Identity": "C:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Dashboard\\obj\\Debug\\net9.0\\compressed\\d5r95dt77e-1s9gfjsw8i.gz",
+      "Identity": "C:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Dashboard\\obj\\Debug\\net9.0\\compressed\\d5r95dt77e-lk9528y7zq.gz",
       "SourceId": "SIMPE.Dashboard",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Dashboard\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/SIMPE.Dashboard",
-      "RelativePath": "dashboard#[.{fingerprint=1s9gfjsw8i}]?.html.gz",
+      "RelativePath": "dashboard#[.{fingerprint=lk9528y7zq}]?.html.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -52,8 +52,8 @@
       "RelatedAsset": "C:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Dashboard\\wwwroot\\dashboard.html",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "lgr1m9uh0b",
-      "Integrity": "RfsGJrp+0d0ohBxJFgD88tr9n17mvAJLOu9UEWvMWzA=",
+      "Fingerprint": "qgqxyfsf59",
+      "Integrity": "OoIjOIkygvRTAik59S6WZHb3uBYLilN7OtpvXaxlYeM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Dashboard\\wwwroot\\dashboard.html"
@@ -136,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "1s9gfjsw8i",
-      "Integrity": "gfBj3qfkBQkM4DXnAh0qUNEDBP+R4TfFWWfd1pUfvrI=",
+      "Fingerprint": "lk9528y7zq",
+      "Integrity": "S/4EgQpkLy7Fob0w6elHhfGkK7SvQ2LG1Y2aCJG4Yr8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\dashboard.html"
@@ -506,13 +506,13 @@
       ]
     },
     {
-      "Route": "dashboard.1s9gfjsw8i.html",
-      "AssetFile": "C:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Dashboard\\obj\\Debug\\net9.0\\compressed\\d5r95dt77e-1s9gfjsw8i.gz",
+      "Route": "dashboard.html",
+      "AssetFile": "C:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Dashboard\\obj\\Debug\\net9.0\\compressed\\d5r95dt77e-lk9528y7zq.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000181455271"
+          "Quality": "0.000144425188"
         }
       ],
       "ResponseHeaders": [
@@ -522,19 +522,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5510"
+          "Value": "6923"
         },
         {
           "Name": "ETag",
-          "Value": "\"RfsGJrp+0d0ohBxJFgD88tr9n17mvAJLOu9UEWvMWzA=\""
+          "Value": "\"OoIjOIkygvRTAik59S6WZHb3uBYLilN7OtpvXaxlYeM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 21:33:58 GMT"
+          "Value": "Wed, 29 Apr 2026 04:18:21 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -550,26 +550,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"gfBj3qfkBQkM4DXnAh0qUNEDBP+R4TfFWWfd1pUfvrI=\""
+          "Value": "W/\"S/4EgQpkLy7Fob0w6elHhfGkK7SvQ2LG1Y2aCJG4Yr8=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "1s9gfjsw8i"
-        },
-        {
-          "Name": "label",
-          "Value": "dashboard.html"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-gfBj3qfkBQkM4DXnAh0qUNEDBP+R4TfFWWfd1pUfvrI="
+          "Value": "sha256-S/4EgQpkLy7Fob0w6elHhfGkK7SvQ2LG1Y2aCJG4Yr8="
         }
       ]
     },
     {
-      "Route": "dashboard.1s9gfjsw8i.html",
+      "Route": "dashboard.html",
       "AssetFile": "C:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Dashboard\\wwwroot\\dashboard.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -579,7 +571,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "25464"
+          "Value": "40184"
         },
         {
           "Name": "Content-Type",
@@ -587,11 +579,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"gfBj3qfkBQkM4DXnAh0qUNEDBP+R4TfFWWfd1pUfvrI=\""
+          "Value": "\"S/4EgQpkLy7Fob0w6elHhfGkK7SvQ2LG1Y2aCJG4Yr8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 21:33:58 GMT"
+          "Value": "Wed, 29 Apr 2026 04:18:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-S/4EgQpkLy7Fob0w6elHhfGkK7SvQ2LG1Y2aCJG4Yr8="
+        }
+      ]
+    },
+    {
+      "Route": "dashboard.html.gz",
+      "AssetFile": "C:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Dashboard\\obj\\Debug\\net9.0\\compressed\\d5r95dt77e-lk9528y7zq.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6923"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OoIjOIkygvRTAik59S6WZHb3uBYLilN7OtpvXaxlYeM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Apr 2026 04:18:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OoIjOIkygvRTAik59S6WZHb3uBYLilN7OtpvXaxlYeM="
+        }
+      ]
+    },
+    {
+      "Route": "dashboard.lk9528y7zq.html",
+      "AssetFile": "C:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Dashboard\\obj\\Debug\\net9.0\\compressed\\d5r95dt77e-lk9528y7zq.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000144425188"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6923"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OoIjOIkygvRTAik59S6WZHb3uBYLilN7OtpvXaxlYeM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Apr 2026 04:18:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"S/4EgQpkLy7Fob0w6elHhfGkK7SvQ2LG1Y2aCJG4Yr8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lk9528y7zq"
+        },
+        {
+          "Name": "label",
+          "Value": "dashboard.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-S/4EgQpkLy7Fob0w6elHhfGkK7SvQ2LG1Y2aCJG4Yr8="
+        }
+      ]
+    },
+    {
+      "Route": "dashboard.lk9528y7zq.html",
+      "AssetFile": "C:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Dashboard\\wwwroot\\dashboard.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"S/4EgQpkLy7Fob0w6elHhfGkK7SvQ2LG1Y2aCJG4Yr8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Apr 2026 04:18:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -601,7 +738,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1s9gfjsw8i"
+          "Value": "lk9528y7zq"
         },
         {
           "Name": "label",
@@ -609,13 +746,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-gfBj3qfkBQkM4DXnAh0qUNEDBP+R4TfFWWfd1pUfvrI="
+          "Value": "sha256-S/4EgQpkLy7Fob0w6elHhfGkK7SvQ2LG1Y2aCJG4Yr8="
         }
       ]
     },
     {
-      "Route": "dashboard.1s9gfjsw8i.html.gz",
-      "AssetFile": "C:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Dashboard\\obj\\Debug\\net9.0\\compressed\\d5r95dt77e-1s9gfjsw8i.gz",
+      "Route": "dashboard.lk9528y7zq.html.gz",
+      "AssetFile": "C:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Dashboard\\obj\\Debug\\net9.0\\compressed\\d5r95dt77e-lk9528y7zq.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -624,7 +761,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5510"
+          "Value": "6923"
         },
         {
           "Name": "Content-Type",
@@ -632,11 +769,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RfsGJrp+0d0ohBxJFgD88tr9n17mvAJLOu9UEWvMWzA=\""
+          "Value": "\"OoIjOIkygvRTAik59S6WZHb3uBYLilN7OtpvXaxlYeM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 21:33:58 GMT"
+          "Value": "Wed, 29 Apr 2026 04:18:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -654,7 +791,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1s9gfjsw8i"
+          "Value": "lk9528y7zq"
         },
         {
           "Name": "label",
@@ -662,144 +799,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-RfsGJrp+0d0ohBxJFgD88tr9n17mvAJLOu9UEWvMWzA="
-        }
-      ]
-    },
-    {
-      "Route": "dashboard.html",
-      "AssetFile": "C:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Dashboard\\obj\\Debug\\net9.0\\compressed\\d5r95dt77e-1s9gfjsw8i.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000181455271"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5510"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"RfsGJrp+0d0ohBxJFgD88tr9n17mvAJLOu9UEWvMWzA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 21:33:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"gfBj3qfkBQkM4DXnAh0qUNEDBP+R4TfFWWfd1pUfvrI=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-gfBj3qfkBQkM4DXnAh0qUNEDBP+R4TfFWWfd1pUfvrI="
-        }
-      ]
-    },
-    {
-      "Route": "dashboard.html",
-      "AssetFile": "C:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Dashboard\\wwwroot\\dashboard.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "25464"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"gfBj3qfkBQkM4DXnAh0qUNEDBP+R4TfFWWfd1pUfvrI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 21:33:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-gfBj3qfkBQkM4DXnAh0qUNEDBP+R4TfFWWfd1pUfvrI="
-        }
-      ]
-    },
-    {
-      "Route": "dashboard.html.gz",
-      "AssetFile": "C:\\Users\\Oscar\\Documents\\SIMPE\\SIMPE.Dashboard\\obj\\Debug\\net9.0\\compressed\\d5r95dt77e-1s9gfjsw8i.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5510"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"RfsGJrp+0d0ohBxJFgD88tr9n17mvAJLOu9UEWvMWzA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Apr 2026 21:33:58 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-RfsGJrp+0d0ohBxJFgD88tr9n17mvAJLOu9UEWvMWzA="
+          "Value": "sha256-OoIjOIkygvRTAik59S6WZHb3uBYLilN7OtpvXaxlYeM="
         }
       ]
     },

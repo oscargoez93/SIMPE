@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SIMPE.Agent")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fdb76e505b1e65e54dd2cd876bc7f4193be27c7c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af310e306a779e894c8d8e08c82a29b63814297a")]
 [assembly: System.Reflection.AssemblyProductAttribute("SIMPE.Agent")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SIMPE.Agent")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

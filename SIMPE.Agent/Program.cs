@@ -1,53 +1,76 @@
 using SIMPE.Agent.Services;
 
-var builder = WebApplication.CreateBuilder(args);
+namespace SIMPE.Agent;
 
-// Add services to the container.
-builder.Services.AddOpenApi();
-
-// Register Custom Services
-builder.Services.AddSingleton<DatabaseService>();
-builder.Services.AddHostedService<HardwareCollectorService>();
-
-// Configure CORS if needed later
-builder.Services.AddCors(options =>
+public class Program
 {
-    options.AddPolicy("AllowAll", builder =>
+    [STAThread]
+    public static void Main(string[] args)
     {
-        builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
-    });
-});
+        var cts = new CancellationTokenSource();
 
-var app = builder.Build();
+        // Start Kestrel in background thread (MTA)
+        var hostTask = Task.Run(async () =>
+        {
+            var builder = WebApplication.CreateBuilder(args);
+            builder.WebHost.UseUrls("http://localhost:5073");
+            builder.Logging.ClearProviders();
+            builder.Logging.AddConsole();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
+            builder.Services.AddOpenApi();
+            builder.Services.AddSingleton<DatabaseService>();
+            builder.Services.AddSingleton<SecurityCollectorService>();
+            builder.Services.AddSingleton<PerformanceCollectorService>();
+            builder.Services.AddSingleton<NavigationHistoryCollectorService>();
+            builder.Services.AddHostedService<HardwareCollectorService>();
+            builder.Services.AddHostedService<PerformanceAutoCollector>();
+            builder.Services.AddHostedService<SecurityAutoCollector>();
+            builder.Services.AddHostedService<NavigationAutoCollector>();
+            builder.Services.AddHostedService<DataRetentionService>();
+
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", b => b.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            });
+
+            var app = builder.Build();
+            app.UseCors("AllowAll");
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
+            app.MapGet("/api/equipos", async (DatabaseService db) => Results.Ok(await db.GetAllEquiposAsync()));
+            app.MapGet("/api/equipo/current", async (DatabaseService db) =>
+            {
+                var equipos = await db.GetAllEquiposAsync();
+                var equipo = equipos.FirstOrDefault();
+                return equipo is not null ? Results.Ok(equipo) : Results.NotFound();
+            });
+            app.MapGet("/api/security/current", (SecurityCollectorService s) => Results.Ok(s.GatherSecurityInfo()));
+            app.MapGet("/api/performance/current", (PerformanceCollectorService p) => Results.Ok(p.GatherPerformanceMetrics()));
+            app.MapGet("/api/navigation/current", (NavigationHistoryCollectorService n, int? limit) => Results.Ok(n.GatherNavigationHistory(limit ?? 2000)));
+
+            var lifetime = app.Services.GetRequiredService<IHostApplicationLifetime>();
+            var serverReady = new TaskCompletionSource();
+            lifetime.ApplicationStarted.Register(() => serverReady.TrySetResult());
+
+            using var reg = cts.Token.Register(() => lifetime.StopApplication());
+            var runTask = app.RunAsync(cts.Token);
+            await serverReady.Task;
+            await runTask;
+        });
+
+        // Run WinForms in a dedicated STA thread so WebView2 gets the correct COM apartment
+        var uiThread = new Thread(() =>
+        {
+            ApplicationConfiguration.Initialize();
+            Application.Run(new MainForm(cts));
+        });
+        uiThread.SetApartmentState(ApartmentState.STA);
+        uiThread.Start();
+        uiThread.Join();
+
+        // When the UI closes, stop Kestrel
+        cts.Cancel();
+        try { hostTask.Wait(TimeSpan.FromSeconds(10)); } catch { /* ignore shutdown errors */ }
+    }
 }
-
-app.UseCors("AllowAll");
-
-// Serve static files (the Frontend)
-app.UseDefaultFiles();
-app.UseStaticFiles();
-
-// Register minimal APIs
-app.MapGet("/api/equipos", async (DatabaseService db) =>
-{
-    var equipos = await db.GetAllEquiposAsync();
-    return Results.Ok(equipos);
-})
-.WithName("GetEquipos");
-
-app.MapGet("/api/equipo/current", async (DatabaseService db) =>
-{
-    // A simplification to get the most recent or the single agent row
-    var equipos = await db.GetAllEquiposAsync();
-    var current = equipos.OrderByDescending(e => e.ultima_actualizacion).FirstOrDefault();
-    if(current == null) return Results.NotFound();
-    return Results.Ok(current);
-})
-.WithName("GetCurrentEquipo");
-
-app.Run();

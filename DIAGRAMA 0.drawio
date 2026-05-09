@@ -1,0 +1,115 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1">
+  <diagram name="Página-1" id="As2DjMVCO_eT4s-4T6Y_">
+    <mxGraphModel dx="1042" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-3" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;" value="AGENTE" vertex="1">
+          <mxGeometry height="120" width="130" x="10" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-6" parent="1" style="shape=ext;margin=3;double=1;whiteSpace=wrap;html=1;align=center;" value="" vertex="1">
+          <mxGeometry height="490" width="470" x="250" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-7" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;" value="SUPERVISOR / GERENCIA" vertex="1">
+          <mxGeometry height="120" width="130" x="800" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-8" parent="1" style="whiteSpace=wrap;html=1;strokeColor=none;fontColor=light-dark(#000000,#FB7318);fontStyle=1;fontSize=22;" value="DIAGRAMA 0" vertex="1">
+          <mxGeometry height="50" width="210" x="380" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-9" parent="1" style="whiteSpace=wrap;html=1;strokeColor=none;fontColor=light-dark(#000000,#FB7318);fontStyle=1;fontSize=22;" value="PROYECTO&amp;nbsp;&lt;div&gt;SIMPE&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="210" x="370" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-18" edge="1" parent="1" source="ABx4zeJb2hpxNpUVInIm-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ABx4zeJb2hpxNpUVInIm-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-27" connectable="0" parent="ABx4zeJb2hpxNpUVInIm-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="ENTRADA B" vertex="1">
+          <mxGeometry relative="1" x="-0.596" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-12" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;" value="ADMINISTRADOR" vertex="1">
+          <mxGeometry height="120" width="130" x="10" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-15" edge="1" parent="1" source="ABx4zeJb2hpxNpUVInIm-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ABx4zeJb2hpxNpUVInIm-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-30" connectable="0" parent="ABx4zeJb2hpxNpUVInIm-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="REGISTRO A" vertex="1">
+          <mxGeometry relative="1" x="-0.0457" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-21" edge="1" parent="1" source="ABx4zeJb2hpxNpUVInIm-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ABx4zeJb2hpxNpUVInIm-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-32" connectable="0" parent="ABx4zeJb2hpxNpUVInIm-21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="FLUJO DE DATOS B" vertex="1">
+          <mxGeometry relative="1" x="-0.1432" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-13" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;" value="1. PROCESO DE REGISTRO AGENTE" vertex="1">
+          <mxGeometry height="110" width="140" x="295" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-33" edge="1" parent="1" source="ABx4zeJb2hpxNpUVInIm-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ABx4zeJb2hpxNpUVInIm-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-34" connectable="0" parent="ABx4zeJb2hpxNpUVInIm-33" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="FLUJO DE&lt;div&gt;DATOS C&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0496" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-14" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="BASE DE DATOS 1&lt;div&gt;INFO / INVENTARIO&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="150" x="290" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-19" edge="1" parent="1" source="ABx4zeJb2hpxNpUVInIm-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ABx4zeJb2hpxNpUVInIm-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-31" connectable="0" parent="ABx4zeJb2hpxNpUVInIm-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="REGISTRO B" vertex="1">
+          <mxGeometry relative="1" x="-0.08" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-23" edge="1" parent="1" source="ABx4zeJb2hpxNpUVInIm-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ABx4zeJb2hpxNpUVInIm-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-36" connectable="0" parent="ABx4zeJb2hpxNpUVInIm-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="FLUJO DE DATOS D" vertex="1">
+          <mxGeometry relative="1" x="-0.3145" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-16" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;" value="2. PROCESO DE REGISTRO USUARIOS" vertex="1">
+          <mxGeometry height="110" width="140" x="295" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-24" edge="1" parent="1" source="ABx4zeJb2hpxNpUVInIm-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ABx4zeJb2hpxNpUVInIm-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-35" connectable="0" parent="ABx4zeJb2hpxNpUVInIm-24" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="FLUJO DE DATOS B" vertex="1">
+          <mxGeometry relative="1" x="-0.304" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-20" parent="1" style="whiteSpace=wrap;html=1;align=center;" value="BASE DE DATOS 2&lt;div&gt;METRICAS / EVENTOS&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="150" x="525" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-25" edge="1" parent="1" source="ABx4zeJb2hpxNpUVInIm-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ABx4zeJb2hpxNpUVInIm-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-29" connectable="0" parent="ABx4zeJb2hpxNpUVInIm-25" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="SALIDA C" vertex="1">
+          <mxGeometry relative="1" x="0.6209" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-22" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;" value="3. PROCESO DE INFORMES" vertex="1">
+          <mxGeometry height="110" width="140" x="530" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-17" edge="1" parent="1" source="ABx4zeJb2hpxNpUVInIm-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ABx4zeJb2hpxNpUVInIm-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ABx4zeJb2hpxNpUVInIm-26" connectable="0" parent="ABx4zeJb2hpxNpUVInIm-17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="ENTRADA A" vertex="1">
+          <mxGeometry relative="1" x="-0.6448" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

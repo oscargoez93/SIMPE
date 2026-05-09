@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SIMPE.Dashboard")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3779a80e9e8777a142707503c9572a03a1f9fef1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af310e306a779e894c8d8e08c82a29b63814297a")]
 [assembly: System.Reflection.AssemblyProductAttribute("SIMPE.Dashboard")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SIMPE.Dashboard")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

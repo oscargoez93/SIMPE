@@ -1,0 +1,6 @@
+C:\Users\Oscar\Documents\SIMPE\SIMPE.Agent\bin\Release\net9.0\win-x64\publish\appsettings.Development.json
+C:\Users\Oscar\Documents\SIMPE\SIMPE.Agent\bin\Release\net9.0\win-x64\publish\appsettings.json
+C:\Users\Oscar\Documents\SIMPE\SIMPE.Agent\bin\Release\net9.0\win-x64\publish\SIMPE.Agent.pdb
+C:\Users\Oscar\Documents\SIMPE\SIMPE.Agent\bin\Release\net9.0\win-x64\publish\aspnetcorev2_inprocess.dll
+C:\Users\Oscar\Documents\SIMPE\SIMPE.Agent\bin\Release\net9.0\win-x64\publish\e_sqlite3.dll
+C:\Users\Oscar\Documents\SIMPE\SIMPE.Agent\bin\Release\net9.0\win-x64\publish\SIMPE.Agent.exe
